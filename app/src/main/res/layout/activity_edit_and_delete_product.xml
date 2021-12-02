@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screenSuplier.EditAndDeleteProductActivity"
+    >
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/btn_backEditorDeleteProduct"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="#49749E"
+                android:textSize="16sp"
+                app:icon="@drawable/ic_flecha_back"
+                android:text="Back"
+                app:iconGravity="textStart"
+                app:iconSize="20dp"
+                app:iconTint="#3959AA"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_Deleteproduct"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="47dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:textAllCaps="false"
+                android:textColor="#49749E"
+                app:icon="@drawable/ic_delete"
+                app:iconGravity="textEnd"
+                app:iconSize="26dp"
+                app:iconTint="#FF0000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        >
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit product image"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="20dp"
+                />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/riv_photoProduct_edit"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/add_photopng"
+                app:riv_corner_radius="20dp" />
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_nameProduct_edit"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:elevation="2dp"
+                android:hint="Name Product"
+                app:boxStrokeColor="#4960DE"
+                app:boxStrokeErrorColor="#A70E2C"
+                app:boxStrokeWidth="2dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="50"
+                app:endIconMode="clear_text"
+                app:errorEnabled="true"
+                app:startIconDrawable="@drawable/ic_product">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_descripcionProduct_edit"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="14dp"
+                android:elevation="2dp"
+                android:hint="Descripcion Product"
+                app:boxStrokeColor="#4960DE"
+                app:boxStrokeErrorColor="#A70E2C"
+                app:boxStrokeWidth="1dp"
+                app:endIconMode="clear_text"
+                app:errorEnabled="true"
+                app:startIconDrawable="@drawable/ic_description">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:singleLine="false" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_priceProduct_edit"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="14dp"
+                android:elevation="2dp"
+                android:hint="Price Product"
+                app:boxStrokeColor="#4960DE"
+                app:boxStrokeErrorColor="#A70E2C"
+                app:boxStrokeWidth="1dp"
+                app:endIconMode="clear_text"
+                app:errorEnabled="true"
+                app:startIconDrawable="@drawable/ic_money_price">
+
+                <com.santalu.maskedittext.MaskEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    app:met_mask="#############"
+                    android:singleLine="false" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="10dp"
+                >
+
+                <Spinner
+                    android:id="@+id/sp_categoryProduct_edit"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1.5"
+                    android:layout_height="60dp"
+                    android:background="#FAFAFA"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintCircleRadius="@dimen/cardview_default_elevation" />
+
+
+                <Button
+                    android:id="@+id/btn_newCategoryAddproduct_edit"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                    android:layout_weight="0.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    app:icon="@drawable/ic_add"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="2dp"
+                    app:iconGravity="textStart"
+                    android:elevation="1dp"
+                    app:iconSize="46dp"
+                    app:iconTint="#3BC220" />
+
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+            <Button
+                android:id="@+id/btn_editProduct_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#FFD740"
+                android:fontFamily="@font/amarante"
+                android:paddingHorizontal="40dp"
+                android:paddingVertical="8dp"
+                android:text="Edit"
+                android:textColor="#4E4E4E"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:visibility="gone"
+                app:boxStrokeColor="#000000"
+                app:boxStrokeWidth="2dp"
+                app:boxStrokeWidthFocused="4dp"
+                app:cornerRadius="10dp"
+                app:rippleColor="#B6DCFF" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

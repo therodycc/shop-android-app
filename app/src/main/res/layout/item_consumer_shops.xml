@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="2dp"
+    android:id="@+id/cardview_store_consumer"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="12dp"
+    android:backgroundTint="#FFFFFF"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/consumer_image_store"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logocompany"
+        android:scaleType="fitXY"
+        app:riv_corner_radius_top_left="15dp"
+        app:riv_corner_radius_bottom_left="15dp"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp">
+
+        <TextView
+            android:id="@+id/consumer_name_store"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:text="La sirena más de una emoción"
+            android:textStyle="bold"
+            android:fontFamily="@font/amarante"
+            android:textSize="18dp"
+            android:textColor="#036EDA"
+            android:gravity="start"
+            />
+
+        <TextView
+            android:id="@+id/consumer_social_store"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:text="www.social.com"
+            android:textStyle="normal|italic"
+            android:fontFamily="@font/amarante"
+            android:textSize="14dp"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            />
+
+        <TextView
+        android:id="@+id/consumer_phone_store"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:text="829-201-4522"
+        android:textStyle="normal"
+        android:fontFamily="@font/amarante"
+        android:textSize="14dp"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        />
+
+        <TextView
+            android:id="@+id/consumer_id_store"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:visibility="gone"
+            android:textStyle="normal"
+            android:fontFamily="@font/amarante"
+            android:textSize="12dp"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

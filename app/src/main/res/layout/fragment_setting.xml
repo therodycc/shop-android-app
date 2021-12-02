@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#EBFDFF"
+    tools:context=".screenSuplier.fragments_second.FragmentSetting">
+
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_seconSuplier_enabledStore"
+        android:layout_width="match_parent"
+        android:thumb="@drawable/ic_store"
+        app:thumbTint="#00B8D4"
+        android:checked="false"
+        android:layout_height="wrap_content"
+        android:text="Do you want others to see your store?"
+        android:layout_marginTop="10dp"
+        android:paddingVertical="10dp"
+        android:background="#FFFFFF"
+        android:textSize="16sp"
+        android:fontFamily="@font/amarante"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        />
+
+
+    <Button
+        android:id="@+id/btn_setting_close_SecondSuplier"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingLeft="18dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Main menu"
+        android:paddingVertical="10dp"
+        android:textAllCaps="false"
+        app:icon="@drawable/ic_order_menu"
+        app:iconTint="#0A79B1"
+        app:iconGravity="end"
+        android:textColor="@color/top_color_azulejo_suplier"
+        android:layout_marginTop="5dp"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:rippleColor="#8C8C8C"
+        app:shapeAppearance="@style/Widget.MaterialComponents.Button"
+        />
+
+
+
+
+</LinearLayout>

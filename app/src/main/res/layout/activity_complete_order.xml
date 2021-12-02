@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screenSuplier.CompleteOrderActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/txa"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/chicle"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="Order: "
+                android:textColor="#006CD7"
+                android:textSize="20sp"
+                android:layout_marginStart="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                android:layout_marginLeft="4dp" />
+
+
+            <TextView
+                android:id="@+id/idorden_complete_order"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/amarante"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="1xzw2"
+                android:textColor="#27292B"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txa"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/btnClose_complete_order"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAllCaps="false"
+                android:textColor="#CC4040"
+                android:textSize="18sp"
+                app:icon="@drawable/ic_close"
+                app:iconGravity="textEnd"
+                app:iconSize="30dp"
+                app:iconTint="#FF0000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Client: "
+            android:layout_marginLeft="4dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:fontFamily="@font/amarante"
+            />
+
+        <TextView
+            android:id="@+id/namecliente_complete_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dalvin Molina"
+            android:textColor="#DD2C00"
+            android:textSize="16dp"
+            app:fontFamily="@font/artifika" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Date: "
+            android:layout_marginLeft="4dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:fontFamily="@font/amarante"
+            />
+
+
+        <TextView
+            android:id="@+id/orderdate_complete_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20/8/2020"
+            android:textColor="#31489E"
+            android:textSize="16dp"
+            app:fontFamily="@font/artifika" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: "
+            android:layout_marginLeft="4dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:fontFamily="@font/amarante"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RD$"
+            android:textColor="#4FA21A"
+            android:textSize="16dp"
+            app:fontFamily="@font/artifika" />
+
+        <TextView
+            android:id="@+id/ordertotal_complete_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12.0021.00"
+            android:textColor="#31489E"
+            android:textSize="16dp"
+            app:fontFamily="@font/artifika" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: "
+            android:layout_marginLeft="4dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:fontFamily="@font/amarante"
+            />
+        <TextView
+            android:id="@+id/orderphone_complete_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+1 809-281-5105"
+            android:textColor="#31489E"
+            android:textSize="16dp"
+            app:fontFamily="@font/artifika" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment: "
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:fontFamily="@font/amarante"
+        />
+
+    <TextView
+        android:id="@+id/orderComment_complete_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comment: "
+        android:textAlignment="inherit"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#5D5D5D"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:fontFamily="@font/artifika"
+        />
+
+
+    <LinearLayout
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:fontFamily="@font/amarante"
+            android:text="ID"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/name_product_buy"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:fontFamily="@font/amarante"
+            android:text="Name"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/count_product_buy"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:fontFamily="@font/amarante"
+            android:text="Quantity"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/price_product_buy"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:fontFamily="@font/amarante"
+            android:text="Price"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerOrderDetalleSuplier_complete_order"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DFEDEBEF"
+        android:layout_marginHorizontal="10dp"/>
+
+
+    <Button
+        android:id="@+id/btnState_complete_order"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginTop="14dp"
+        android:layout_marginHorizontal="10dp"
+        android:backgroundTint="#36CF03"
+        android:paddingStart="14dp"
+        android:paddingVertical="12dp"
+        android:text="Order Completed"
+        android:textAllCaps="false"
+        app:icon="@drawable/ic_verify"
+        app:iconTint="#000000"
+        app:iconGravity="end"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#C7C7C7"
+        app:shapeAppearance="@style/Widget.MaterialComponents.Button"
+        android:paddingLeft="14dp" />
+
+</LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

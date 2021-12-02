@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shopping">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_supleconsu_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".screenSuplier.CompleteOrderActivity"></activity>
+        <activity android:name=".ScreenConsumer.activity.DetalleOrderActivity" />
+        <activity android:name=".ScreenConsumer.activity.BuyActivity" />
+        <activity android:name=".ScreenConsumer.activity.ShopsActivity" />
+        <activity android:name=".ScreenConsumer.activity.MainConsumer" />
+        <activity android:name=".screenSuplier.EditAndDeleteProductActivity" />
+        <activity android:name=".screenSuplier.AddProductActivty" />
+        <activity android:name=".screenSuplier.AddCategoryActivity" />
+        <activity android:name=".screenSuplier.EditAndDeleteCategoryActivity" />
+        <activity
+            android:name=".screenSuplier.SecondSuplierActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".screenSuplier.AddCompanyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".screenSuplier.MainSuplierActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".screenMain.RecoveryPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".screenMain.screenSignup1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".screenMain.ScreenSignup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".screenMain.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".screenMain.ScreenLogin"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

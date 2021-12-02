@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_anchorGravity="center"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="12dp"
+    app:cardMaxElevation="14dp"
+    android:padding="2dp"
+    android:id="@+id/cardView_itemProduct"
+    >
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="5dp"
+    >
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/cr_imagenProduct"
+        android:layout_gravity="center"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logocompany"
+        android:scaleType="fitXY"
+        app:riv_corner_radius="15dp"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        >
+
+        <TextView
+            android:id="@+id/txt_nameProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADDIDAS"
+            android:singleLine="true"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#1B1B1B"
+            />
+
+        <TextView
+            android:id="@+id/txt_descriptionProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADDIDAS"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="#1B1B1B"
+            />
+
+        <TextView
+            android:id="@+id/txt_idProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADDIDAS"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="#1B1B1B"
+            />
+
+
+        <TextView
+            android:id="@+id/txt_categoryProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tenis"
+            android:singleLine="true"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textColor="#676767"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:singleLine="true"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#67AE0A"
+                />
+
+            <TextView
+                android:id="@+id/txt_priceProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="170000"
+                android:singleLine="true"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#E53E5E76"
+                />
+        </LinearLayout>
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</com.google.android.material.card.MaterialCardView>

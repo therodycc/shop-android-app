@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/cardview_businness_company"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardMaxElevation="16dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginBottom="3dp"
+    android:padding="1dp"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+          >
+
+  <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/item_imageCompany"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:riv_corner_radius_top_left="20dp"
+            app:riv_corner_radius_top_right="20dp"
+            android:src="@drawable/logocompany"
+            android:scaleType="fitXY"
+            android:elevation="1dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_store"
+                app:tint="#1435AA" />
+
+
+                <TextView
+                    android:id="@+id/item_nameCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="La Sirena Mas de una emocion"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:textSize="17dp"
+                    android:layout_marginTop="3dp"
+                    android:textAlignment="textStart"
+                    android:textColor="#10131A"
+                    tools:ignore="RtlCompat"
+                    android:paddingLeft="5dp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingVertical="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="40dp"
+            android:background="#6D00F1"
+            android:layout_marginLeft="40dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_phone"
+                app:tint="#5D9E08" />
+
+
+            <TextView
+                android:id="@+id/item_phoneCompany"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="(809) 523-4153"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:textSize="17dp"
+                android:layout_marginTop="3dp"
+                android:textAlignment="textStart"
+                android:textColor="#10131A"
+                tools:ignore="RtlCompat" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingVertical="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="40dp"
+            android:background="#6D00F1"
+            android:layout_marginLeft="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_place_country"
+                app:tint="#000000" />
+
+
+            <TextView
+                android:id="@+id/item_addressCompany"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Santo Domingo N., Isabella, doble via/#23"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:textSize="16dp"
+                android:layout_marginTop="3dp"
+                android:textAlignment="textStart"
+                android:textColor="#10131A"
+                tools:ignore="RtlCompat" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingVertical="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="40dp"
+            android:background="#6D00F1"
+            android:layout_marginLeft="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_sector"
+                app:tint="#263C61" />
+
+
+            <TextView
+                android:id="@+id/item_countryCompany"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Republica Domininicana"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:textSize="17dp"
+                android:layout_marginTop="3dp"
+                android:textAlignment="textStart"
+                android:textColor="#10131A"
+                tools:ignore="RtlCompat" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingVertical="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="40dp"
+            android:background="#6D00F1"
+            android:layout_marginLeft="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_link"
+                app:tint="#FFD740" />
+
+
+            <TextView
+                android:id="@+id/item_linkCompany"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="https://www.youtube.com/watch?v=nibA3ny0yUE"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:textSize="17dp"
+                android:layout_marginTop="3dp"
+                android:textAlignment="textStart"
+                android:textColor="#10131A"
+                tools:ignore="RtlCompat" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            >
+
+
+            <TextView
+                android:id="@+id/item_idCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:paddingHorizontal="2dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/item_statusCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:paddingHorizontal="2dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.material.card.MaterialCardView>

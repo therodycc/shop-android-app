@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_shops_c"
+        android:icon="@drawable/ic_store"
+        android:title="Shops"
+        />
+
+    <item
+        android:id="@+id/navigation_orders_c"
+        android:icon="@drawable/ic_list_product"
+        android:title="Orders"
+        />
+
+    <item
+        android:id="@+id/navigation_setting_c"
+        android:icon="@drawable/ic_setting"
+        android:title="Setting"
+        />
+
+</menu>

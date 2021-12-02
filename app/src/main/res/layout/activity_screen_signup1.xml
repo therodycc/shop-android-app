@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screenMain.screenSignup1"
+    android:background="#DFE4E6"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#95AEC2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_cancelAccount"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="#D30B32"
+                android:textSize="18sp"
+                app:icon="@drawable/ic_close"
+                app:iconTint="#F50057"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginRight="36dp"
+                android:paddingHorizontal="10dp"
+                android:text="Account"
+                android:textColor="#464A5D"
+                android:textSize="28sp"
+                app:fontFamily="@font/chicle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_saveAccount"
+                app:layout_constraintHorizontal_bias="0.951"
+                app:layout_constraintStart_toEndOf="@+id/btn_cancelAccount"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.545" />
+
+            <Button
+                android:id="@+id/btn_saveAccount"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="10dp"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="#149719"
+                android:textSize="18sp"
+                app:icon="@drawable/ic_verify"
+                app:iconGravity="end"
+                app:iconTint="#149719"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+        <!-- Note: A RecyclerView can also be used -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+        <!-- Scrollable content -->
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_helpAccount"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:text="Help"
+                android:textAllCaps="false"
+                android:textColor="#FFAB00"
+                android:textSize="18sp"
+                app:icon="@drawable/ic_help"
+                app:iconGravity="end"
+                app:iconTint="#FF6D00" />
+
+            <TextView
+                android:id="@+id/bannerAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:text="Start Buying"
+                android:textColor="#464A5D"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/amarante" />
+
+
+            <RadioGroup
+                android:id="@+id/rg_users"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:scrollbars="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_suply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_radiobutton"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableBottom="@drawable/ic_suplidor"
+                    android:gravity="center"
+                    android:text="Supplier"
+                    android:textColor="@drawable/txt_press_radiobutton"
+                    android:textSize="30dp"
+                    app:fontFamily="@font/amarante" />
+
+                <RadioButton
+                    android:id="@+id/rb_consumer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_radiobutton"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/ic_1consumer"
+                    android:gravity="center"
+                    android:text="Consumer"
+                    android:textColor="@drawable/txt_press_radiobutton"
+                    android:textSize="30dp"
+                    app:fontFamily="@font/amarante" />
+            </RadioGroup>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="14dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="18dp"
+    android:id="@+id/cardview_orderConsumer_company"
+    android:background="@drawable/background_cardview_company"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/background_appbar_order_suplier"
+            tools:ignore="MissingConstraints">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Order:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/amarante"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.545" />
+
+
+                <TextView
+                    android:id="@+id/item_orderSuplier_idOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:paddingHorizontal="3dp"
+                    android:text="ASDL3-ACWPal"
+                    android:textColor="#FFE57F"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/amarante"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Client: "
+                android:layout_marginLeft="4dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:fontFamily="@font/amarante"
+                />
+
+            <TextView
+                android:id="@+id/item_orderSuplier_idClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="#474747"
+                android:textSize="16dp"
+                app:fontFamily="@font/artifika" />
+
+            <TextView
+                android:id="@+id/item_orderSuplier_fullnamecliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dalvin Molina"
+                android:textColor="#DD2C00"
+                android:textSize="16dp"
+                app:fontFamily="@font/artifika" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: "
+                android:layout_marginLeft="4dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:fontFamily="@font/amarante"
+                />
+
+            <TextView
+                android:id="@+id/item_orderSuplier_phoneclient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+1 809-526-8952"
+                android:textColor="#474747"
+                android:textSize="16dp"
+                app:fontFamily="@font/artifika" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date: "
+                android:layout_marginLeft="4dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:fontFamily="@font/amarante"
+                />
+
+            <TextView
+                android:id="@+id/item_orderSuplier_commentorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="16/05/2020"
+                android:textColor="#474747"
+                android:textSize="16dp"
+                app:fontFamily="@font/artifika" />
+
+            <TextView
+                android:id="@+id/item_orderSuplier_dateorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="16/05/2020"
+                android:textColor="#323232"
+                android:textSize="16dp"
+                app:fontFamily="@font/artifika" />
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total: "
+                android:layout_marginLeft="4dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:fontFamily="@font/amarante"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RD$"
+                android:textColor="#4FA21A"
+                android:textSize="16dp"
+                app:fontFamily="@font/artifika" />
+
+            <TextView
+                android:id="@+id/item_orderSuplier_totalorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000.00"
+                android:textColor="#474747"
+                android:textSize="16dp"
+                app:fontFamily="@font/artifika" />
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State: "
+                android:layout_marginLeft="4dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:fontFamily="@font/amarante"
+                />
+
+            <TextView
+                android:id="@+id/item_orderSuplier_stateorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pendingas"
+                android:textColor="#3D3D3D"
+                android:textSize="16dp"
+                app:fontFamily="@font/artifika" />
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

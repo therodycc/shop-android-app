@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".screenSuplier.fragments.FragmentAccount"
+    android:background="#E5E5E5">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingVertical="5dp"
+                android:text="Full Name"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#004F9E"
+                />
+
+            <TextView
+                android:id="@+id/account_suplier_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Dalvin Molina"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:fontFamily="@font/artifika"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingVertical="5dp"
+                android:text="Username"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#004F9E"
+                />
+
+            <TextView
+                android:id="@+id/account_suplier_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Dalvi23"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:fontFamily="@font/artifika"
+                android:textColor="#000000"
+                />
+
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingVertical="5dp"
+                android:text="Phone"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#004F9E"
+                />
+
+            <TextView
+                android:id="@+id/account_suplier_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="+1 809-526-9895"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:fontFamily="@font/artifika"
+                android:textColor="#000000"
+                />
+
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingVertical="5dp"
+                android:text="Address"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#004F9E"
+                />
+
+            <TextView
+                android:id="@+id/account_suplier_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Dalvin Molina"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:fontFamily="@font/artifika"
+                android:textColor="#000000"
+                />
+
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingVertical="5dp"
+                android:text="Account"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#004F9E"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Suplier"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/artifika"
+                android:textColor="#FF6D00"
+                />
+
+
+            <Button
+                android:id="@+id/btn_editAccount_suplier"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="start"
+                android:paddingVertical="12dp"
+                android:paddingStart="14dp"
+                android:paddingLeft="14dp"
+                android:text="Edit Account"
+                android:textAllCaps="false"
+                android:textColor="#007BF6"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:icon="@drawable/ic_edit"
+                app:iconGravity="end"
+                app:iconTint="#FFAB00"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:rippleColor="#C7C7C7"
+                app:shapeAppearance="@style/Widget.MaterialComponents.Button" />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

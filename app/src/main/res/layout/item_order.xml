@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:layout_margin="6dp"
+    app:cardCornerRadius="14dp"
+    android:id="@+id/cardview_order_consumer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/cardview_light_background"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order: "
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:fontFamily="@font/amarante"
+                />
+
+            <TextView
+                android:id="@+id/item_order_consumer_idOrden"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ASDL3-ACWPal"
+                android:textColor="#448AFF"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:id="@+id/item_order_consumer_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="ASDL3-ACWPal"
+                android:textColor="#448AFF"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="18dp"
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company: "
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:fontFamily="@font/amarante"
+                />
+
+            <TextView
+                android:id="@+id/item_order_consumer_nameCompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rep. dom Live"
+                android:textColor="#FF6E40"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="18dp"
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Order: "
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:fontFamily="@font/amarante"
+                />
+
+            <TextView
+                android:id="@+id/item_order_consumer_subTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ASDL3-ACWPal"
+                android:textColor="#448AFF"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="18dp"
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:weightSum="3"
+            >
+
+            <TextView
+                android:layout_weight="0.1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State:"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:fontFamily="@font/amarante"
+                />
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/item_order_consumer_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textColor="#717171"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_weight="1.8"
+                android:id="@+id/item_order_consumer_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22/11/2020"
+                android:gravity="end"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="18dp"
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.material.card.MaterialCardView>
+
